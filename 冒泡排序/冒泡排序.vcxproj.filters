@@ -18,5 +18,48 @@
     <ClCompile Include="冒泡排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="i++ etc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="希尔排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="归并排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="插入排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="选择排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="指针基础.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="结构体基础.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="随机数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="值、地址、引用传递.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数提高.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\pic\两次打印返回的局部变量.PNG">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

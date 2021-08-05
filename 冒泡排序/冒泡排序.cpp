@@ -1,18 +1,23 @@
 ﻿// 冒泡排序.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-#include <iostream>
-using namespace std;
 
-int *Bubble_Sort(int *a)
+#include"func.h"
+
+//它重复地走访过要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
+
+//比较相邻的元素。如果第一个比第二个大，就交换它们两个；对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对，这样在最后的元素应该会是最大的数；针对所有的元素重复以上的步骤，除了最后一个；
+
+int *Bubble_Sort(int *a,int len)
 {
     int temp;
 
     int length = sizeof( a ) /sizeof(a[0]);
     cout << "将一个函数A里面定义的数组当参数传给函数B时，在B里面计算：length of sequence :" << length << endl;
     //当将数组作为实参传递到另一个函数中时, 另一个函数的形参相当于一个指针变量, 因为将数组的名作为实参时, 就是将数字的首地址作为实参
-    length = 9;
-    for (int i = 0; i < length-1; i++)
+    //静态数组传进来作为参数，结果是一样的。
+    length = len;
+    for (int i = 0; i < length -1; i++)
     {
         for (int j=0; j < length -1-i; j++)
         {
@@ -28,21 +33,6 @@ int *Bubble_Sort(int *a)
     //想要返回一个数组，那么函数必须是指针函数，且指着指针函数的形参也是指针才可以
 }
 
-int main()
-{
-    int a[9] = { 6,3,2,6,3,1,0,4,5};
-    int *b;
-    int length = sizeof(a) / sizeof(int);
-
-    cout << "在定义数组的函数A计算:length of sequence :" << length << endl;
-    b=Bubble_Sort(a);
-    cout << "Bubble_Sort(冒泡排序）:" << endl;
-    for (int i = 0; i < 9; i++)
-    {
-        cout << b[i]<<" ";
-    }
-    return 0;
-}
 
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
