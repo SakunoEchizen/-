@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>  //c++ 用于处理字符串
 
 //c++ 用于处理字符串
 #include<string>  
